@@ -1,0 +1,11 @@
+# Archivo 11 - IPv6 e IPv4 combinados
+auto eth0
+iface eth0 inet static
+    address 172.16.11.10
+    netmask 255.255.255.0
+    gateway 172.16.11.1
+
+iface eth0 inet6 static
+    address 2001:db8::11
+    netmask 64
+    gateway 2001:db8::1
